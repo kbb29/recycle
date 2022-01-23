@@ -1,6 +1,6 @@
 Recycling classifier.
 
-##Pre-existing work using PyTorch and this dataset https://www.kaggle.com/asdasdasasdas/garbage-classification (2400 images, 6 categories)
+##There is some Pre-existing work using PyTorch and this dataset https://www.kaggle.com/asdasdasasdas/garbage-classification (2400 images, 6 categories)
 
 https://towardsdatascience.com/garbage-segregation-using-pytorch-6f2a8a67f92c
     RESNET9 manual implementation  ~83% accuracy
@@ -9,7 +9,7 @@ https://www.kaggle.com/aadhavvignesh/pytorch-garbage-classification-95-accuracy/
     RESNET50 with last layer replaced ~95% accuracy in 355s (sagemaker ml.p2.xlarge)
     
 https://rahulkaranam777.medium.com/how-to-build-a-cnn-for-classifying-garbage-using-pytorch-50510e898fc6
-    RESNET50 very similar to the one above [didn't test this one myself]
+    RESNET50 very similar to the one above (didn't test this one myself)
     
 
     
@@ -48,13 +48,14 @@ ResNet (with better image pre-processing) with sigmoid 97% after 6 epochs (but s
 
 #### Singh dataset
 rewrote the way data was loaded so that we do augementation for the training data.  Also now with normlisation.  and no sigmoid
-much bigger dataset 99% accuracy after 3 epochs.  But epochs much longer because of larger dataset 827 s for 8 epochs
+much bigger dataset 99% accuracy after 3 epochs.  But epochs much longer because of larger dataset 1600 s for 8 epochs
 can't compare with garbage dataset because of different labels.
 
 99% on test set
 
-And then try training just the last 3 layers and see how much speedup we get.
-And then try inception
+And then try training just the last 3 layers and see how much speedup we get. 99% in 3 epochs (800s per epoch)
+99% in 3 epochs, 827s for 8 epochs, so not huge time saving
+And then try inception - 
 
 Why does this give improvements?
 Dataset size
@@ -62,3 +63,5 @@ Quality of images
 Image pre-processing
 
 Explore
+
+print confusion matrix
