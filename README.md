@@ -69,12 +69,12 @@ I've compared the three datasets and the two models below.  I loaded pretrained 
 * The recycle dataset also has a training loss which is higher than the validation loss.  I would have attributed this to data augmentation (which is applied to the training data, but not to the validation data) however the garbage data does not show such a difference despite having the same pre-processing - this requires further investigation.
 
 
-Resnet training loss (recycle)
+#### Resnet training loss (recycle)
 
 ![recycle](diagrams/recycle-resnet-3-loss.png)
 
 
-Resnet training loss (garbage)
+#### Resnet training loss (garbage)
 
 ![rgarbage](diagrams/garbage-resnet-3-loss.png)
 
