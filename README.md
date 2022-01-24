@@ -82,7 +82,7 @@ I've compared the three datasets and the two models below.  I loaded pretrained 
 
 #### Running on AWS
 
-this will use cloudformation to launch a sagemaker notebook.  The default instance type is ml.t2.medium.  If you actually want to train the model yourself, edit cloudformation.yml to specify and instance type with more compute.
+this will use cloudformation to launch a sagemaker notebook.  The default instance type is ml.t2.xlarge.  If you actually want to train the model yourself, edit cloudformation.yml to specify and instance type with more compute.
 
 ```
 #change the name here if you like
