@@ -1,8 +1,8 @@
 Recycling classifier.
 
 ### Datasets
-recycle dataset http://web.cecs.pdx.edu/~singh/rcyc-web/dataset.html      (11,500 images, 5 categories)
-garbage dataset https://www.kaggle.com/asdasdasasdas/garbage-classification   (2400 images, 6 categories)
+* recycle dataset http://web.cecs.pdx.edu/~singh/rcyc-web/dataset.html      (11,500 images, 5 categories)
+* garbage dataset https://www.kaggle.com/asdasdasasdas/garbage-classification   (2400 images, 6 categories)
 
 ### Pre-existing work
 There is some Pre-existing work using PyTorch and the garbage dataset 
