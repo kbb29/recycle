@@ -92,7 +92,8 @@ aws cloudformation create-stack --template-body "`cat ./cloudformation.yml`" --s
 #find the name of the sagemaker instance
 sagemakername=`aws cloudformation list-stack-resources --stack-name ${stackname} | fgrep PhysicalResourceId | grep -oP '(?<=notebook-instance\/)recycleclassifier-[^"]+'`
 #print the url of the jupyter notebook
-aws sagemaker describe-notebook-instance --notebook-instance-name ${sagemakername} | jq -r .Url
+echo "https://`aws sagemaker describe-notebook-instance --notebook-instance-name ${sagemakername} | jq -r .Url`/tree/recycle"
+#wait for the notebook to finish loading and go to the url - when asked to choose a kernel go for conda_pytorch_latest_p36
 ```
 
 to delete the cloudformation stack:
