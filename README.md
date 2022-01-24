@@ -66,7 +66,7 @@ I've compared the three datasets and the two models below.  I loaded pretrained 
 * Inception and ResNet perform similarly - the only difference is on the garbage dataset where Resnet performs better
 * Inception was slightly slower to train (but it is a larger network, and I am training more layers)
 * The recycle dataset is quite dark, so when a model is trained on the recycle dataset it does a poor job of identifying the external images at the bottom of the notebook - could we adjust the brightness?
-* The recycle dataset also has a training loss which is higher than the validation loss.  I would have attributed this to data augmentation (which is applied to the training data, but not to the validation data) however the garbage data does not show such a difference - this requires further investigation.
+* The recycle dataset also has a training loss which is higher than the validation loss.  I would have attributed this to data augmentation (which is applied to the training data, but not to the validation data) however the garbage data does not show such a difference despite having the same pre-processing - this requires further investigation.
 
 
 Resnet training loss (recycle)
