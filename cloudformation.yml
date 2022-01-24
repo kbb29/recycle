@@ -3,7 +3,7 @@ Resources:
   RecycleClassifier:
     Type: "AWS::SageMaker::NotebookInstance"
     Properties:
-      InstanceType: "ml.t2.medium"
+      InstanceType: "ml.t2.xlarge"
       RoleArn: !GetAtt ExecutionRole.Arn
       AdditionalCodeRepositories: ["https://github.com/kbb29/recycle.git"]
   ExecutionRole: 
