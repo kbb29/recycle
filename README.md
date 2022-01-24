@@ -70,9 +70,12 @@ I've compared the three datasets and the two models below.  I loaded pretrained 
 
 
 Resnet training loss (recycle)
+
 ![recycle](diagrams/recycle-resnet-3-loss.png)
 
+
 Resnet training loss (garbage)
+
 ![rgarbage](diagrams/garbage-resnet-3-loss.png)
 
 ### Running the notebook
