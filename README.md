@@ -18,7 +18,7 @@ https://rahulkaranam777.medium.com/how-to-build-a-cnn-for-classifying-garbage-us
     
 
     
-### Ideas for improvement:
+### Ideas for improvement
 
 start with aadhavvignesh
 
@@ -38,10 +38,10 @@ tried 9e-5, 15e-5 both unstable.
 
 
 #### Transfer Learning
-freeze 0/10 layers 355s for 8 epochs - 95% accuracy after 4 epochs overfit 
-freeze first 6/10 layers 236s for 8 epochs - 95% accuracy after about 4 epochs.  Overfit.
-freeze first 7/10 layers 167s for 8 epochs - 94% after 5 epochs overfit but less so.
-freeze first 9/10 layers (entire resnet except the last layer) - 80% accuracy in 62s (lr 7e-4)
+* freeze 0/10 layers 355s for 8 epochs - 95% accuracy after 4 epochs overfit 
+* freeze first 6/10 layers 236s for 8 epochs - 95% accuracy after about 4 epochs.  Overfit.
+* freeze first 7/10 layers 167s for 8 epochs - 94% after 5 epochs overfit but less so.
+* freeze first 9/10 layers (entire resnet except the last layer) - 80% accuracy in 62s (lr 7e-4)
 
 
 #### Inception and Singh dataset
